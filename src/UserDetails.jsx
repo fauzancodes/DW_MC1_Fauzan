@@ -14,13 +14,13 @@ function UserDetails() {
           <div className="rounded-circle" style={{ width:"20rem",heiht:"20rem"}}>
             <img src={User.image} alt={User.username} className="w-100"/>
           </div>
-          <h1>{User.username}</h1>
+          <h5 className="text-light">@{User.username}</h5>
           <div className="d-flex">
-            <div className="me-3 d-flex flex-column align-items-center">
+            <div className="me-3 d-flex flex-column align-items-center fw-bold">
               <p>{User.follower}</p>
               <p>Followers</p>
             </div>
-            <div className="d-flex flex-column align-items-center">
+            <div className="d-flex flex-column align-items-center fw-bold">
               <p>{User.following}</p>
               <p>Followings</p>
             </div>
