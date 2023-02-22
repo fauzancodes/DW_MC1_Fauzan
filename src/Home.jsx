@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <div className="container">
+      <div className="container mt-3">
         {
           userData.map((item) => (
             <Link to={`/user-details/${item.id}`}>
