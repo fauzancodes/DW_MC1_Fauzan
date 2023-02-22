@@ -1,11 +1,11 @@
 import './App.css';
 import { useParams } from "react-router-dom";
 
-import UserDetails from "./UserDetails";
+import data from "./data.json";
 
-function App() {
+function UserDetails() {
   const params = useParams();
-  let User = UserDetails.filter(User => User.id === parseInt(params.id));
+  let User = data.filter(User => User.id === parseInt(params.id));
   User = User[0];
   return (
     <>
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default UserDetails;
