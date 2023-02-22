@@ -10,9 +10,9 @@ function UserDetails() {
   return (
     <>
       <div className="container d-flex flex-column align-items-center">
-        <div className="d-flex flex-column align-items-center bg-secondary">
-          <div className="rounded-circle" style={{ width:"20rem",heiht:"20rem"}}>
-            <img src={User.image} alt={User.username} className="w-100"/>
+        <div className="d-flex flex-column align-items-center bg-secondary w-100">
+          <div className="" style={{ width:"20rem",heiht:"20rem"}}>
+            <img src={User.image} alt={User.username} className="w-100 rounded-circle" style={{ border:"5px solid red" }}/>
           </div>
           <h5 className="text-light">@{User.username}</h5>
           <div className="d-flex">

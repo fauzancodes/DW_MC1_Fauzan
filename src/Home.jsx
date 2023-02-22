@@ -9,9 +9,9 @@ function Home() {
         {
           userData.map((item) => (
             <Link to={`/user-details/${item.id}`}>
-              <div key={item.id} className="w-100 d-flex mb-3" style={{ backgroundColor:"#6610f2" }}>
-                <div className="rounded-circle" style={{ width:"5rem",heiht:"5rem"}}>
-                  <img src={item.image} alt={item.username} className="w-100"/>
+              <div key={item.id} className="w-100 d-flex mb-3 bg-primary">
+                <div className="" style={{ width:"5rem",heiht:"5rem" }}>
+                  <img src={item.image} alt={item.username} className="w-100 rounded-circle"/>
                 </div>
                 <div>
                   <div className="fw-bold text-light text-decoration-none">@{item.username}</div>
