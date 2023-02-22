@@ -14,8 +14,8 @@ function Home() {
                   <img src={item.image} alt={item.username} className="w-100"/>
                 </div>
                 <div>
-                  <div className="fw-bold text-light">@{item.username}</div>
-                  <div className="fw-bold text-light">Followers: {item.follower}</div>
+                  <div className="fw-bold text-light text-decoration-none">@{item.username}</div>
+                  <div className="fw-bold text-light text-decoration-none">Followers: {item.follower}</div>
                 </div>
               </div>
             </Link>
